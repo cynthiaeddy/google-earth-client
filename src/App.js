@@ -7,14 +7,10 @@ import { Route, BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <div>
-          <Route exact path="/" component={Opener} />
-          <Route path="/search" component={Home} />
-        </div>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Route exact path="/" component={Opener} />
+      <Route path="/search" component={Home} />\{' '}
+    </BrowserRouter>
   )
 }
 

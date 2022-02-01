@@ -3,7 +3,7 @@ import Images from './Images'
 
 const SearchBar = (props) => {
   return (
-    <div>
+    <>
       <div className="searchBar">
         <div className="search">
           <label htmlFor="search">
@@ -28,7 +28,7 @@ const SearchBar = (props) => {
           )
         })}
       </div>
-    </div>
+    </>
   )
 }
 export default SearchBar

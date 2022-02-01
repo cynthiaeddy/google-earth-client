@@ -1,242 +1,235 @@
-.App {
-	text-align: center;
-}
-
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-	font-size: 16px;
+  font-size: 16px;
 }
 html,
 body {
-	height: 100%;
-	overflow: hidden;
-	font-family: 'News Cycle', sans-serif;
-	color: white;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'News Cycle', sans-serif;
+  color: white;
+  background: black;
 }
 .opener {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
-	z-index: 50;
-	width: 100vw;
-	height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
 }
 .image-opener {
-	object-fit: cover;
-	justify-self: center;
-	width: 100%;
-	height: 100%;
+  object-fit: cover;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
 }
 .opener-content {
-	position: absolute;
-	z-index: 100;
-	margin: auto;
-	background: black;
-	width: 600px;
-	text-align: center;
-	padding: 30px;
+  position: absolute;
+  z-index: 100;
+  margin: auto;
+  background: black;
+  width: 600px;
+  text-align: center;
+  padding: 30px;
 }
 h1 {
-	font-size: 50px;
-	border-bottom: 1px solid grey;
-	margin-bottom: 20px;
-	padding-bottom: 3px;
-	line-height: .75;
-	margin: 0 50px 30px 50px;
+  font-size: 50px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 20px;
+  padding-bottom: 3px;
+  line-height: 0.75;
+  margin: 0 50px 30px 50px;
 }
 .opener-content span {
-	font-weight: 700;
-	font-size: 25px;
+  font-weight: 700;
+  font-size: 25px;
 }
 p {
-	font-size: 23px;
+  font-size: 23px;
 }
 hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid grey;
-	margin: 1em 0;
-	padding: 0;
-	margin: 30px 50px 30px 50px;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid grey;
+  margin: 1em 0;
+  padding: 0;
+  margin: 30px 50px 30px 50px;
 }
 .button {
-	padding: 10px;
-	background: none;
-	border: 1px solid grey;
-	color: white;
-	cursor: pointer;
-	text-decoration: none;
+  padding: 10px;
+  background: none;
+  border: 1px solid grey;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
 }
 .button:hover {
-	color: grey;
-	transform: scale(1.15);
+  color: grey;
+  transform: scale(1.15);
 }
 
 .fas {
-	position: absolute;
-	bottom: 14px;
-	left: 20px;
+  position: absolute;
+  bottom: 14px;
+  left: 20px;
 }
 .fas:hover {
-	color: grey;
+  color: grey;
 }
 
 .main-container {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	overflow: auto;
-	background: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  background: black;
 }
 
 .container {
-	width: 100vw;
-	height: 100vh;
-	text-align: center;
-	margin-top: 200px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding-top: 20px;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
 }
 .ui.card {
-	width: 300px;
-	height: 300px;
-	display: inline-grid;
-	position: relative;
-	cursor: pointer;
-	text-align: center;
-	border: grey solid 1px;
-	padding: 1rem;
-	margin-top: -1px;
-	margin-left: -1px;
+  width: 300px;
+  height: 300px;
+  display: inline-grid;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  margin-top: -1px;
+  margin-left: -1px;
 }
 
 .ui.card:last-child {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .solo-image {
-	position: absolute;
-	width: 200%;
-	height: 200%;
-	overflow: hidden;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  overflow: hidden;
 }
 
 .one-card .solo-image {
-	width: 100vw;
-	height: auto;
-	height: 94vh;
-	position: fixed;
-	object-fit: cover;
-	top: 0;
-	left: 0;
-	z-index: 1;
+  width: 100vw;
+  height: auto;
+  height: 94vh;
+  position: fixed;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 ul {
-	justify-content: center;
-	text-align: center;
-	display: flex;
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 
 li {
-	display: inline-block;
-	padding-left: 30px;
+  display: inline-block;
+  padding-left: 30px;
 }
 
 h4 {
-	padding-top: 10px;
-	font-size: 20px;
+  padding-top: 10px;
+  font-size: 20px;
 }
 span {
-	font-weight: 400;
+  font-weight: 400;
 }
 .content {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	background: black;
-	width: 100vw;
-	padding-bottom: 12px;
-	border-top: 1px solid grey;
-	z-index: 100;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: black;
+  width: 100vw;
+  padding-bottom: 12px;
+  border-top: 1px solid grey;
+  z-index: 100;
 }
 
 .photo-image {
-	object-fit: cover;
-	justify-self: center;
-	width: 100%;
-	max-height: auto;
+  object-fit: cover;
+  justify-self: center;
+  width: 100%;
+  max-height: auto;
 }
 .searchBar {
-	display: flex;
-	justify-content: center;
-	position: fixed;
-	height: 200px;
-	top: 0;
-	background: black;
-	width: 100vw;
-	align-items: center;
-	text-align: center;
-	z-index: 10;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  height: 200px;
+  top: 0;
+  background: black;
+  width: 100vw;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
 }
 .search {
-	position: relative;
+  position: relative;
 }
 .search input {
-	align-self: center;
-	background: none;
-	border: grey solid 1px;
-	padding: 5px;
-	color: white;
-	font-size: 100%;
+  align-self: center;
+  background: none;
+  border: grey solid 1px;
+  padding: 5px;
+  color: white;
+  font-size: 100%;
 }
-/* input,
-select {
-	font-size: 100%;
-} */
 
 @media (max-width: 500px) {
-	.opener-content {
-		margin: auto;
-		background: black;
-		width: 320px;
-		text-align: center;
-		padding: 20px;
-		padding-bottom: 30px;
-	}
-	.search input {
-		width: 100%;
-	}
-	p {
-		font-size: 20px;
-	}
-	h1 {
-		line-height: 1;
-	}
-	.content {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		background: black;
-		width: 100vw;
-		padding-bottom: 40px;
-		border-top: 1px solid grey;
-		padding-left: 20px;
-		padding-right: 40px;
-	}
+  .opener-content {
+    margin: auto;
+    background: black;
+    width: 320px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 30px;
+  }
+  .search input {
+    width: 100%;
+  }
+  p {
+    font-size: 20px;
+  }
+  h1 {
+    line-height: 1;
+  }
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: black;
+    width: 100vw;
+    padding-bottom: 40px;
+    border-top: 1px solid grey;
+    padding-left: 20px;
+    padding-right: 40px;
+  }
 
-	.fas {
-		position: absolute;
-		top: 30%;
-	}
+  .fas {
+    position: absolute;
+    top: 30%;
+  }
 }
