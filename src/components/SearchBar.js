@@ -2,6 +2,7 @@ import React from 'react'
 import Images from './Images'
 
 const SearchBar = (props) => {
+  const noResults = 'No Results Found'
   return (
     <>
       <div className="searchBar">
@@ -18,15 +19,19 @@ const SearchBar = (props) => {
         </div>
       </div>
       <div className="container">
-        {props.images.map((image) => {
-          return (
-            <Images
-              image={image}
-              key={image.id}
-              handleCardView={props.handleCardView}
-            />
-          )
-        })}
+        {props.images.length ? (
+          props.images.map((image) => {
+            return (
+              <Images
+                image={image}
+                key={image.id}
+                handleCardView={props.handleCardView}
+              />
+            )
+          })
+        ) : (
+          <p>no results found</p>
+        )}
       </div>
     </>
   )

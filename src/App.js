@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Route exact path="/" component={Opener} />
-      <Route path="/search" component={Home} />\{' '}
+      <Route path="/search" component={Home} />
     </BrowserRouter>
   )
 }
