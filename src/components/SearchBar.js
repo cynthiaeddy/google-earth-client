@@ -2,7 +2,6 @@ import React from 'react'
 import Images from './Images'
 
 const SearchBar = (props) => {
-  const noResults = 'No Results Found'
   return (
     <>
       <div className="searchBar">
@@ -16,10 +15,18 @@ const SearchBar = (props) => {
             value={props.inputValue}
             onChange={props.imageFilterOnChange}
           />
+
+          <span>
+            <button className="clear" onClick={props.clearInputValue}>
+              clear
+            </button>
+          </span>
         </div>
       </div>
       <div className="container">
-        {props.images.length ? (
+        {!props.images.length && !props.isLoading ? (
+          <h5>no results found</h5>
+        ) : (
           props.images.map((image) => {
             return (
               <Images
@@ -29,8 +36,6 @@ const SearchBar = (props) => {
               />
             )
           })
-        ) : (
-          <p>no results found</p>
         )}
       </div>
     </>

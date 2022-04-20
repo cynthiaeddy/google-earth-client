@@ -9,6 +9,7 @@ class ImagesContainer extends React.Component {
     sortValue: '',
     inputValue: '',
     isCardViewOn: false,
+    isLoading: true,
   }
 
   componentDidMount() {
@@ -18,8 +19,13 @@ class ImagesContainer extends React.Component {
       .then((resp) => {
         this.setState({
           images: resp,
+          isLoading: false,
         })
       })
+  }
+
+  clearInputValue = () => {
+    this.setState({ inputValue: '' })
   }
 
   handleCardView = (cardItem) => {
@@ -79,6 +85,8 @@ class ImagesContainer extends React.Component {
               handleCardView={this.handleCardView}
               imageFilterOnChange={this.imageFilterOnChange}
               inputValue={this.state.inputValue}
+              isLoading={this.state.isLoading}
+              clearInputValue={this.clearInputValue}
             />
           </div>
         )}

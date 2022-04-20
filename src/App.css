@@ -157,6 +157,7 @@ li {
 h4 {
   padding-top: 10px;
   font-size: 20px;
+  letter-spacing: 0.03em;
 }
 span {
   font-weight: 400;
@@ -192,8 +193,10 @@ span {
 }
 .search {
   position: relative;
+  width: 90%;
 }
-.search input {
+.search input,
+.clear {
   align-self: center;
   background: none;
   border: grey solid 1px;
@@ -201,6 +204,17 @@ span {
   color: white;
   font-size: 100%;
   text-align: center;
+}
+.search input:focus {
+  outline: 0;
+}
+.clear {
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 20px;
+}
+h5 {
+  font-size: 16px;
+  letter-spacing: 0.03em;
 }
 
 @media (max-width: 500px) {
@@ -213,7 +227,7 @@ span {
     padding-bottom: 30px;
   }
   .search input {
-    width: 100%;
+    width: 60%;
   }
   p {
     font-size: 20px;
