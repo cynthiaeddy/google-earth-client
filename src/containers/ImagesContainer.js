@@ -14,7 +14,8 @@ class ImagesContainer extends React.Component {
 
   componentDidMount() {
     // fetch('http://localhost:3000/images')
-    fetch('https://google-earth-api.herokuapp.com/images')
+    // fetch('https://google-earth-api.herokuapp.com/images')
+    fetch('https://boiling-mountain-17336.herokuapp.com/images')
       .then((resp) => resp.json())
       .then((resp) => {
         this.setState({
