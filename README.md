@@ -12,7 +12,7 @@ To run this app:
 
 PART ONE
 
-Go to https://github.com/cynthiaeddy/google-earth-api and follow the instructions to run the Earth Paints backend. Then return here.
+Go to https://github.com/cynthiaeddy/earth-api and follow the instructions to run the Earth Paints backend. Then return here.
 
 PART TWO
 
