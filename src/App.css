@@ -125,22 +125,19 @@ hr {
   margin-bottom: 40px;
 }
 
-.solo-image {
+.one-card {
   position: absolute;
-  width: 200%;
-  height: 200%;
-  overflow: hidden;
+  top: 0
 }
 
-.one-card .solo-image {
+.solo-image {
   width: 100vw;
-  height: auto;
   height: 94vh;
-  position: fixed;
+  position: absolute;
   object-fit: cover;
   top: 0;
   left: 0;
-  z-index: 1;
+
 }
 
 ul {
@@ -163,7 +160,7 @@ span {
   font-weight: 400;
 }
 .content {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   background: black;
@@ -236,7 +233,7 @@ h5 {
     line-height: 1;
   }
   .content {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     background: black;

@@ -3,7 +3,7 @@ import React from 'react';
 const ImageCard = (props) => {
 	return (
 		<div className="one-card" onClick={() => props.handleGoHome(props.image)}>
-			<img src={props.image.image} className="solo-image" />
+			<img src={props.image.image} className="solo-image" alt={props.image.name} />
 			<div className="content">
 				<ul>
 					<h4>
